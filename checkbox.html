@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox</title>
+</head>
+<body>
+  <input type="checkbox" value="Cricket" id="cricket">Cricket <br>
+  <input type="checkbox" value="Football" id="football">Football <br>
+  <input type="checkbox" value="Badminton" id="badminton">Badminton <br>
+  <input type="checkbox" value="Basketball" id="basketball">Basketball <br>
+  <button onclick="showgames()">show selected games</button>
+  <h1 id="result">The selected games are: </h1>
+</body>
+</html>
+
+<script>
+  function showgames(){
+    var gameslist = []
+    var cricket = document.getElementById("cricket")
+    var football = document.getElementById("football")
+    var badminton = document.getElementById("badminton")
+    var basketball = document.getElementById("basketball")
+    if(cricket.checked){
+      gameslist.push(cricket.value)
+    }
+    if (football.checked) {
+      gameslist.push(football.value)
+    }
+    if (badminton.checked) {
+      gameslist.push(badminton.value)
+    }
+    if (basketball.checked) {
+      gameslist.push(basketball.value)
+    }
+
+    document.getElementById("result").innerHTML=gameslist;
+  }
+</script>

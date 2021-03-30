@@ -1,0 +1,1 @@
+document.write('Hello World fron external javascript file')

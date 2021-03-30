@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Append/Remove</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div id="maindiv">
+    <h1 id="firsth1">This is first element</h1>
+    <h1 id="secondh1">This is second element</h1>
+  </div>
+</body>
+</html>
+
+<script>
+  $("#maindiv").append("<h1>This is third element</h1><p>This is paragraph</p>")
+
+  $('#secondh1').remove()
+</script>

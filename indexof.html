@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index of</title>
+</head>
+<body>
+  <h1 id="numbers"></h1>
+  <input type="text" id="search">
+  <button id="find" onclick="searchele()">Find</button>
+</body>
+</html>
+
+<script>
+  var numbers=['shruti', 'jain', 'shrey', 'hello']
+  document.getElementById("numbers").innerHTML=numbers
+  function searchele(){
+    var val=document.getElementById("search").value
+    var res=numbers.indexOf(val)
+    if(res == -1){
+      alert("The number "+val+" is not present in the array")
+    }
+    else{
+      alert("The number "+val+" is present in the array")
+    }
+  }
+</script>

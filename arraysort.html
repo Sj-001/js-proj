@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Sort</title>
+</head>
+<body>
+  <script>
+    var numbers = [2, 4, 3, 6, 7, 8]
+
+    numbers.sort(function(a, b){
+      return b-a
+    })
+
+    for(var i = 0; i < numbers.length; ++i){
+      document.write(numbers[i] + '<br>')
+    }
+
+  </script>
+</body>
+</html>

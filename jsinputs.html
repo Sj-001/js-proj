@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js inputs</title>
+  <style>
+    input, button{
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" placeholder="username" id="username">
+  <br>
+  <button onclick="getvalue()">get input value</button>
+</body>
+</html>
+
+<script>
+  function getvalue(){
+    var username= document.getElementById("username").value
+    alert(username)
+  }
+</script>

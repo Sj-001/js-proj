@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade effects</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<style>
+  #text{
+    font-size: 150px;
+  }
+</style>
+<body>
+  <h1 id="text">Joker</h1>
+
+  <button onclick="fadein()">Fade In</button>
+  <button onclick="fadeout()">Fade Out</button>
+
+</body>
+</html>
+
+<script>
+  function fadein() {
+    $("#text").fadeIn(1000);
+  }
+  function fadeout() {
+    $("#text").fadeOut(1000);
+  }
+</script>

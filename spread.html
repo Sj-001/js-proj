@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+<body>
+  <script>
+    var numbers=[2,4,6,3,7,8,6]
+    var numbers2=[3,5,4,6,7]
+    var numbers3=[...numbers,...numbers2]
+    //numbers=[0,...numbers]
+    for(num of numbers3) document.write(num+'<br>')
+  </script>
+</body>
+</html>

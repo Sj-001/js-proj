@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selection List</title>
+</head>
+<body>
+  <h1 id="result">The selected movie is..</h1>
+
+  <select id="movie" onchange="showmovie()">
+    <option value="Joker">Joker</option>
+    <option value="Avengers">Avengers</option>
+    <option value="Dark Knight">Dark Knight</option>
+    <option value="Iron Man">Iron Man</option>
+
+  </select>
+</body>
+</html>
+
+<script>
+  function showmovie(){
+      var movie = document.getElementById("movie").value
+
+    document.getElementById("result").innerHTML='The selected movie is '+movie
+  }
+</script>

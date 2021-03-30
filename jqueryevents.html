@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Events</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <button id="btn">Click me</button>
+  <input type="text" id="username">
+
+<h1 id="text">Hover me</h1>
+</body>
+</html>
+
+<script>
+  $("#btn").on("click",function(){
+    alert("The button is clicked")
+  })
+
+  $("#username").on("keyup", function(){
+    alert("The input text is changed")
+  })
+
+  $("#text").on("mouseover", function(){
+    alert("The h1 tag is hovered over")
+  })
+</script>

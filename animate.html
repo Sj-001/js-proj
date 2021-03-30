@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Animations</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<style>
+  #object{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+  }
+</style>
+<body>
+  <div id="object">
+
+  </div>
+  <button onclick="animatediv()">Perform Animation</button>
+</body>
+</html>
+
+<script>
+  function animatediv(){
+    $("#object").animate({'bottom': '100px'}, 5000, function(){
+      $('#object').animate({'right': '100px'})
+    })
+  }
+</script>

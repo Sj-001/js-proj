@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+</head>
+<body>
+  <h1 id="l">Language in localStorage is</h1>
+    <h1 id="f">Framework in localStorage is</h1>
+
+</body>
+</html>
+
+<script>
+  localStorage.setItem("language", "javascript")
+  localStorage.setItem("framework", "react")
+  var l = document.getElementById("l")
+  var f = document.getElementById("f")
+  l.innerHTML="The language in localstorage is "+localStorage.getItem("language")
+  f.innerHTML="The framework in localstorage is "+localStorage.getItem("framework")
+</script>

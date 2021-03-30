@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Theme</title>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+  <style>
+    h1{
+      font-size: 150px;
+      margin-top: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is dark theme</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, molestias minima? Voluptates corrupti optio sit soluta praesentium. Nulla delectus mollitia, eligendi veniam, maxime rem atque culpa voluptate at iusto dolorum.</p>
+</body>
+</html>
+
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>

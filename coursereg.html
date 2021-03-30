@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration</title>
+</head>
+<style>
+  input, label, select{
+    margin: 10px;
+  }
+</style>
+<body>
+  <h1>Course Registration</h1>
+  <form onsubmit="display();return false">
+    <input type="text" placeholder="firstname" id="firstname"> <br>
+    <input type="text" placeholder="lastname" id="lastname"> <br>
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female <br>
+    <label>Select Language</label>
+    <select id="language">
+      <option value="javascript">Javascript</option>
+      <option value="python">Python</option>
+      <option value="ruby">Ruby</option>
+    </select>
+    <br>
+    <label>Select platform</label>
+    <input type="checkbox" value="online" id="online">Online
+    <input type="checkbox" value="offline" id="offline">Offline
+    <br>
+    <input type="submit" value="register" >
+  </form>
+
+  <p id="result"></p>
+</body>
+</html>
+
+<script>
+  function display(){
+    var firstname = document.getElementById("firstname").value
+    var lastname = document.getElementById("lastname").value
+    var language = document.getElementById("language").value
+    var gender;
+    var online = document.getElementById("online")
+    var offline = document.getElementById("offline")
+    var genders=document.getElementsByName("gender")
+    for(var i =0 ; i < genders.length; ++i){
+      if(genders[i].checked){
+        gender = genders[i].value
+      }
+    }
+    var platforms = []
+    if(online.checked){
+      platforms.push(online.value)
+    }
+    if(offline.checked){
+      platforms.push(offline.value)
+    }
+    var result = document.getElementById("result")
+    result.innerHTML='Firstname = '+firstname+'<br> Lastname = '+lastname+'<br> Language = '+language+'<br> Gender = '+gender+'<br> Platforms = '+platforms
+  }
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects in JS</title>
+</head>
+<body>
+  <script>
+    var student = {
+      'name':'ronaldo',
+      'age': 21,
+      'email': 'ronaldo123@gmail.com',
+      'marks': [99, 85, 90],
+
+      getaddress: function(){
+        return 'get address function is called by ' +this.name 
+      }
+    }
+
+    document.write(student.getaddress())
+  </script>
+</body>
+</html>
